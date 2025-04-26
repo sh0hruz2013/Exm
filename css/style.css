@@ -55,6 +55,9 @@ nav {
   text-decoration-skip-ink: none;
   color: white;
 }
+.nav-brend #ham {
+  color: #ffff;
+}
 .mers {
   display: flex;
   gap: 24px;
@@ -64,10 +67,13 @@ nav {
   gap: 24px;
   transition: 2s;
 }
+nav {
+}
 .nav-btn__link {
   border: 1px solid rgba(255, 255, 255);
   padding: 16px 31px;
   transition: 2s;
+  color: #ffff;
 }
 .IMAGEsa {
   color: white;
@@ -326,6 +332,7 @@ input {
   .ipip {
     text-align: center;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .l img {
     width: 250px;
@@ -334,9 +341,11 @@ input {
     width: 300px;
   }
   .ipip h1 {
+    display: none;
     font-size: 25px;
   }
   .ipip p {
+    display: none;
     font-size: 15px;
   }
   .foter {
@@ -380,5 +389,55 @@ input {
   .footer input {
     width: 100px;
     height: 30px;
+  }
+}
+@media (max-width: 350px) {
+  .gamer {
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 812px) {
+  .footer {
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .footer h6 {
+    text-align: center;
+    font-size: 35px;
+  }
+  .footer h5 {
+    display: none;
+  }
+  .footer input {
+    width: 225px;
+    height: 40px;
+  }
+}
+@media (max-width: 440px) {
+  .footer {
+    flex-direction: column;
+    display: none;
+  }
+}
+@media (max-width: 320px) {
+  .foter img {
+    width: 140px;
+  }
+  .gamer {
+    margin: 20px 0 40px;
+  }
+  .imglar img {
+    width: 135px;
+  }
+  .mers {
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .foot img {
+    width: 240px;
+    text-align: center;
+    justify-content: center;
   }
 }
