@@ -19,7 +19,7 @@ body {
 }
 body.dark {
   --bg-dark: rgba(87, 184, 255, 1);
-  --bg-blue: rgba(0, 0, 0, 0.88);
+  --bg-blue: rgba(0, 0, 0, 0.9);
 }
 .container {
   /* 1440 - 2 * 60 + 2 * 20 =1380 */
@@ -33,6 +33,7 @@ ul {
   list-style-type: none;
 }
 a {
+  color: rgba(255, 255, 255, 1);
   text-decoration: none;
   transition: 2s;
 }
@@ -208,6 +209,7 @@ h6 {
   background-size: 250vh;
 }
 input {
+  font-family: "Orbitron", sans-serif;
   width: 406px;
   height: 50px;
   text-align: center;
@@ -561,7 +563,7 @@ input {
     width: 260px;
   }
   .nav-menu {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 717px) {
